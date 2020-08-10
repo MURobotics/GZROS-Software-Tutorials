@@ -16,7 +16,7 @@ With our tutorials we hope to fulfill several goals to ensure our tutorials can 
 
 - **Relevant Technology:** In the pursuit of a relevant education, the technology that we will use and teach within these tutorials have been selected as they play a major role within the development of industry-grade robots.
 
-- **Accessible Technology:** In addition to the pursuit of relevent technology, the software that we use will be free and accessable to everyone. With the modern culture of open source robotics, the only limitation to creation should be learning.
+- **Accessible Technology:** In addition to the pursuit of relevant technology, the software that we use will be free and accessible to everyone. With the modern culture of open source robotics, the only limitation to creation should be learning.
 
 ### Course Technology
 Throughout these tutorials we'll be developing and testing using these technologies:
