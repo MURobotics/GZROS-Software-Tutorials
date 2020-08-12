@@ -52,6 +52,59 @@ Select the MU Robotics account for the lock screen, it will ask you for a passwo
 #### Step 3: Adjust your Display
 To adjust your display, you may select the icon in the bottom left corner, then you should be able to select the settings icon (if it's not visible, select the 'All' tab at the bottom of the screen). Then, you may change the resolution of your screen to your preferred pixel ratio. (1680 x 1050 @16:10 works well for a full-screen 2017 MacBook Pro)
 
+### Part 4: Testing
+
+#### Step 1: Create a Project Folder
+On your desktop, if you right click, you can make a folder that we will place our future projects in (this will be known as our project folder). For the tutorials, our folder will be called 'projects'.
+
+#### Step 2: Copy the Example Project
+There are two ways we can do this, either by the command line, or through the desktop.
+
+#### Step 2 (Desktop Version):
+On the virtual macine, open up firefox
+
+Then, copy this [link](https://github.com/MURobotics/TemplateDockerGZ) into your firefox browser.
+
+Press the 'Clone' or 'Code' Button and download the zip into your project folder.
+
+Then, right click the donloaded zip to extract it.
+
+Lastly, right click the .zip folder to delete it
+
+#### Step 2 (Command Line Version):
+First, we will change our directory by running:
+``` cd ~/Desktop ```
+
+You should be able to see your project folder listed by running 'ls', this shows the folders in your current directory.
+``` ls ```
+
+Next, we'll go into our project folder. Since we called ours 'projects' we will type:
+``` cd projects ```
+
+Now, we will copy the example project folder by running:
+``` wget https://github.com/MURobotics/TemplateDockerGZ/archive/master.zip ```
+
+With the zip folder installed, we will open it with:
+``` unzip master.zip ```
+
+If we look at what's in our desktop project folder, you can see how there is the .zip folder, and our project folder
+
+Then, we can delete the compressed folder by running:
+``` rm -rf master.zip ```
+
+#### Step 3: Running the simulation
+With our project downloaded, we will need to open up our terminal from the side menu.
+
+Now, we will want to change our folder so we are inside the template folder. To do this we will first want to go into our project folder. For us, our project folder is called 'projects' so to change our directory, we will run ``` cd ~/Desktop/projects/TemplateDockerGZ-master ``` 
+(hint: when typing out your directory, you can press the TAB key to auto-complete a directory name after typing a few letters)
+
+Then, to allow our startup script to run, we will type ```chmod +x startup.sh```
+
+Finally, to run our program, we will run ```./startup.sh```
+
+**NOTE:** The first time running this it will take a few minutes to do the initial setup, but re-running this command in the future should only take a few seconds
+
+#### Step 4: Connecting the Simulation Client
 
 ## Method 2 (free for non-engineering students): Using Virtual Box Software
 
