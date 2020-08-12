@@ -113,7 +113,7 @@ Now, we will want to change our folder so we are inside the template folder. To 
 
 Then, to allow our startup script to run, we will type ```chmod +x startup.sh```
 
-Finally, to run our program, we will run ```./startup.sh```
+Finally, to run our program, we will run ```sudo ./startup.sh```. Remember, our password is 'robotics'.
 
 **NOTE:** The first time running this it will take a few minutes to do the initial setup, but re-running this command in the future should only take a few seconds
 
