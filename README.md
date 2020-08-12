@@ -44,20 +44,13 @@ Either select the customize settings button on the finished page, or select the 
 #### Step 1: Activate your Virtual Machine
 Select your Virtual Machine to launch it with your configured settings. VM ware might provide a pop-up asking to upgrade your virtual machine, we recommend that you select to upgrade it, then wait for the setup to complete.
 
-**Note:** If you accidentally pressed cancel or no, you may upgrade by going into the 'compatibility' section of the configurations page when the virtual machine is off and select 'upgrade'
+**Note:** If you accidentally pressed cancel or no, you may upgrade by going into the 'compatibility' section of the virtual machine settings page when the virtual machine is off, then select 'upgrade'
 
 #### Step 2: Logging in
 Select the MU Robotics account for the lock screen, it will ask you for a password which is "robotics". With this you should be able to see a desktop.
 
 #### Step 3: Adjust your Display
 To adjust your display, you may select the icon in the bottom left corner, then you should be able to select the settings icon (if it's not visible, select the 'All' tab at the bottom of the screen). Then, you may change the resolution of your screen to your preferred pixel ratio. (1680 x 1050 @16:10 works well for a full-screen 2017 MacBook Pro)
-
-### Part 4: Installing Docker and Docker-Compose
-We will use this to automate our builds and avoid package management during these tutorials.
-
-#### Step 1: Open up your terminal in the Navigation Menu
-
-#### Step 2: Run the following command
 
 
 ## Method 2 (free for non-engineering students): Using Virtual Box Software
