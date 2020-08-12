@@ -52,10 +52,13 @@ Select the MU Robotics account for the lock screen, it will ask you for a passwo
 #### Step 3: Adjust your Display
 To adjust your display, you may select the icon in the bottom left corner, then you should be able to select the settings icon (if it's not visible, select the 'All' tab at the bottom of the screen). Then, you may change the resolution of your screen to your preferred pixel ratio. (1680 x 1050 @16:10 works well for a full-screen 2017 MacBook Pro)
 
-### Part 4: Adding Docker and Docker-Compose
+### Part 4: Installing Docker and Docker-Compose
 We will use this to automate our builds and avoid package management during these tutorials.
 
 #### Step 1: Open up your terminal in the Navigation Menu
+
+#### Step 2: Run the following command
+
 
 ## Method 2 (free for non-engineering students): Using Virtual Box Software
 
