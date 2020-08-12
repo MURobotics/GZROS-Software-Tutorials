@@ -10,6 +10,19 @@ In consideration to processor architecture, while x86 is the expected processor 
 
 For minimum system requirements, requirements can vary between methods. It is encouraged that you have 2 cores and 4GB of RAM. It is additionally encouraged that your system has a form of GPU to assist in removing the burden of rendering the simulation (for Methods 1 & Bonus). While there is a chance that these tutorials can work with any system not fulfilling these requirements, we expect the minimum viable performance to be at this level.
 
+If you are using the methods involving virtual machines, you'll want atleast 25GB of free memory (Storage, not RAM) (20GB is the default for the Virtual Machine). If you are planning on running the Development Environment Natively or with Docker, it's reccommended to have approximately 7-10GB of memory available.
+
+## **IMPORTANT:** How to choose a method
+Each method has its own pros and cons, and depending on what your priorities are, it can greatly impact your decision. Here is a list of methods that you can choose between and what their benefits and drawbacks are.
+
+- Method 1 (using VMWare): What makes this method unique is how VMware has excellent support for computer GPUs and it allows for people to run VMs with little performance impacts compared to a native system. The reason why this is the recommended method is that it has a stark advantage on framerates compared to using Method 2 (Virtual Box) and Method 3 (Native Docker) due primarily to the aforementioned reason. The main drawback its software is only free to those who are enrolled within the College of Engineering, while we go through the process of downloading it, this can detract people from its uses.
+
+- Method 2 (using Virtual Box): Admittedly, we're on the fence about the use of this option. With some manual GPU modifications, we're sure it could be more powerful than the native docker option. With that in mind, it appears to have a slower response from a stock configuration that what's desired on OSX (Mac). While this currently has the worst performance, we've included it as an option as other Operating Systems might have better experience using it. Additionally, it's a free VM software that could be viewed as an alternative if Method 3 fell through, or if you have the experience to optimize the graphics.
+
+- Method 3 (Running Docker Natively with no VM): This was the original method for working with the development environment and as such, has its own merits to its creation. This is the simplest to set up (if you can install docker and docker-compose) and should take the least ammount of storage in your PC. While this is the case, the drawback lies within its responsiveness and FPS (this is due to a difference in communication protocols). While it's better than the Virtual Box method, there is a noticable difference in FPS (not awful, but definitely not 60FPS). While it is a noticable difference, it's preferred over Virtual Box, as it's an easier setup, and you can view your simulations within your browser, this is additionally the way how I (the guy writing this) develop out our programs, as it's pretty straight forward and has the best rebuild times, but I would use method 1 if I had to manually edit the simulation worlds for the better performance.
+
+- Bonus Method (If you have Ubuntu 18.04 already installed on your PC): As long as your PC drivers were set-up properly, this would result in the optimal performance for your development. While this would result in the best performance, we would only encourage you to use this path if you already have sufficient experience with linux or if you know how to setup a dual-boot on your PC. In the steps I will show you what items you'll need to install, and the links to do so, but additionally the tutorial will assume you can understand what the instructions are having you do and you will want to place care into ensuring you follow only the required steps of your system.
+
 ## Method 1 (free for MU Engineering students, recommended for those without Ubuntu OS): Using VMware for virtual machine management
 
 This method will have us walk through the process of setting up a virtual machine which has Ubuntu installed along with the core software required for these tutorials, in addition to other robotics components you can work with in the future. We will work towards how you can get VM Ware for free, and the process to setup and install the development environment.
@@ -61,13 +74,13 @@ On your desktop, if you right click, you can make a folder that we will place ou
 There are two ways we can do this, either by the command line, or through the desktop.
 
 #### Step 2 (Desktop Version):
-On the virtual macine, open up firefox
+On the virtual macine, open firefox from the start menu.
 
-Then, copy this [link](https://github.com/MURobotics/TemplateDockerGZ) into your firefox browser.
+Then, go to this [link](https://github.com/MURobotics/TemplateDockerGZ) with your firefox browser.
 
 Press the 'Clone' or 'Code' Button and download the zip into your project folder.
 
-Then, right click the donloaded zip to extract it.
+Then, right click the donloaded zip to extract the folder.
 
 Lastly, right click the .zip folder to delete it
 
