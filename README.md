@@ -74,11 +74,11 @@ Ideally, we'll be able to use one folder for the duration of these tutorials, an
 Now, we will launch the packaged startup command which will download and build our virtual environment. This may take a few minutes for the initial setup, but once downloaded it will be cached for the future, making future builds take seconds. We can launch this by first giving permission to the file with ```chmod +x startup.sh```. Then, start the process by running ```sudo ./startup.sh``` (remember, our password is 'robotics').
 
 #### Step 3: Launch the Simulation Client
-To see our result, all we have to do is run the client program, which has our graphical interface, we can run this by running ```startsimulation.sh```. Then, with a little bit of waiting, we should get our simulation.
+To see our result, all we have to do is run the client program, which has our graphical interface, we can run this by running ```sudo ./startsimulation.sh```. Then, with a little bit of waiting, we should get our simulation.
 
 ## Method 2 (free for non-engineering students): Using Virtual Box Software
 
-## Method 3 (free for non-engineering students, less setup): Using Docker Natively
+## Method 3 (free and recommended for non-engineering students, less setup): Using Docker Natively
 Throughout these tutorials we'll be developing and testing using these technologies:
 
 ### Part 2:
