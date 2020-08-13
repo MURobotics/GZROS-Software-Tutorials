@@ -88,7 +88,44 @@ Throughout these tutorials we'll be developing and testing using these technolog
 ### Prerequisite: Have a Ubuntu 18.04 natively installed on your PC as your primary OS or via dual-boot
 For this method to be viable, we're expecting that you already have Ubuntu 18.04 installed on your host PC, or you've gone through the process of setting up a dual boot of Ubuntu 18.04 (using [other distributions will vary your experience if attempted](http://wiki.ros.org/melodic#:~:text=Changes-,Platforms,are%20supported%20to%20varying%20degrees.)). If you have little experience with installing a new OS to your computer, or with setting up a dual-boot, we recommend either working with someone who has experience in this, or deferring to another method. As setting up a dual boot or switching your operating systems may result in data-loss if done improperly.
 
+### Disclaimer: Be careful to read the instructions, their implications while keeping in mind what you've done with your computer. There might be some fixes you'll need to implement, and other commands you might not need to run, if you are using this method, we expect you to have sufficient experience with linux systems to know how to properly apply these instructions.
 
+### Part 1: Install ROS Melodic Desktop
+With Following this link, you should be able to [install ROS Desktop for Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu). 
+
+### Part 2: Install Docker
+This [link](https://docs.docker.com/engine/install/ubuntu/) will walk you through how to install Docker onto your host system.
+
+### Part 3: Install Docker-Compose
+This [link](https://docs.docker.com/compose/install/) will walk you through the install of Docker Compose on your system.
+
+### Part 4 (Optional): Install Atom Text Editor
+This [link](https://atom.io/) will bring you to the webside of the free text editor we recommend, any text editor should work, but we recommend one that allows you to see the entire project directory.
+
+### Part 5: Install the Example Project
+
+#### Step 1: Make a Project Directory
+For Ubuntu you can either right click and make the directory. With the terminal, you could navigate to where you want to make it (we use Desktop) by typing into your terminal ``` cd ~/Desktop ``` (TAB to auto complete), then when in the Desktop Directory, you can run ``` mkdir projects ```, which will make your project folder.
+
+#### Step 2: Download the Example Project
+Ubuntu should have wget installed, so we will do this through the terminal. Make sure you're in your directory via the terminal by typing ``` cd ~/Desktop/projects ``` (or wherever your project directory is). Then, we can run ```wget https://github.com/MURobotics/TemplateDockerGZ/archive/master.zip``` to get our example.
+
+#### Step 3: Unzip the Example Project
+We can open the project by running ```unzip master.zip```. Once done, we can remove the .zip folder by running ```rm -rf master.zip```.
+
+### Part 6: Run the Project
+
+#### Step 1: Giving Permissions
+We'll want to open the new folder by running ```cd TemplateDockerGZ-master```. To provide our startup with the correct permissions, we can type ```chmod +x ./startup.sh```.
+
+#### Quick Fix: Configuration Error
+We'll want to open up a file installed by ROS-Desktop by opening up a directory with ```nano ~/.ignition/fuel/config.yaml```. In the file, change url to ```url: https://api.ignitionrobotics.org```
+
+#### Step 2: Start the Simulation Server
+We can run the simulation Server by running ```sudo ./startup.sh``` (implying you're in the directory). This will take a few minutes to get set-up, but once initially created, future builds will take seconds.
+
+#### Step 3: Start the Simulation Client
+We should be able to connect the Client by running ```sudo ./startsimulation.sh```.
 
 ## Report a Bug
 If you are experiencing technical difficulties throughout these courses, you may report these on our repository [issues page](https://github.com/MURobotics/GZROS-Software-Tutorials/issues). We'll attempt to keep an active eye on issues that are presented and help provide some guidance to these issues, we want to actively encourage the reporting of issues to better improve the learning experience for everyone. Additionally, if you have any questions regarding the completion of these tutorials, be sure to ask fellow MU Robotic members for any questions or help.
