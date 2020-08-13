@@ -39,6 +39,8 @@ For us to download and use VMWare fusion, we first want to renew a license. By f
 
 #### Step 3: Download the appropriate VMware software
 
+**Note:** For those using OSX, your privacy and security setting might stop you from running the installation. If you receive an error that claims it's an 'unidentified developer' while attempting to install VMware, go to your settings page. Select the Settings option that says 'security and privacy', then press the general tab. When you attempt to install it again, you should see an option pop-up that states your installer was blocked, select 'allow anyways' and you should be able to proceed.
+
 ### Part 2: Setting up the Dev Virtual Machine
 
 #### Step 1: Install the Virtual Machine package
@@ -78,6 +80,23 @@ To see our result, all we have to do is run the client program, which has our gr
 
 ## Method 2 (free for non-engineering students): Using Virtual Box Software
 
+### Disclaimer: This is emperically the least efficient method (at least for OSX). For those without any experience within Virtual Machine optimization and have little experience connecting graphical drivers to your VM. We'd recommend this option only if you have experience with virtual machines AND know how to optimize them.
+
+### Part 1: Install Virtual Box
+By following this [link](https://www.virtualbox.org/wiki/Downloads), we should be able to begin the process for setting up Virtual Box. Be sure to select the correct version for your Operating System.
+
+**Note:** For those using OSX, your privacy and security setting might stop you from running the installation. If you receive an error that claims it's an 'unidentified developer' while attempting to install Virtual Box, go to your settings page. Select the Settings option that says 'security and privacy', then press the general tab. When you attempt to install it again, you should see an option pop-up that states your installer was blocked, select 'allow anyways' and you should be able to proceed.
+
+### Part 2: Creating the Virtual Environment
+
+#### Step 1: Installing the Environment
+
+#### Step 2: Importing the Installed Environment
+
+### Part 3: Launching the Virtual Environment
+
+### Part 4: Launching the Simulation
+
 ## Method 3 (free and recommended for non-engineering students, less setup): Using Docker Natively
 Throughout these tutorials we'll be developing and testing using these technologies:
 
@@ -99,7 +118,7 @@ By following this [link](https://docs.docker.com/compose/install/), you should b
 ### Part 2: Downloading the Project
 
 #### Step 1: Make a Project Folder
-You'll want to make a folder for your projects to be stored, wherever you want to place this you can, but it's recommended that you will be required to access it through your terminal or command line in the future. I recommend making the project in your Desktop Directory, as it is easily visible and you can access it with a few clicks.
+You'll want to make a folder for your projects to be stored, wherever you want to place this you can, but it's recommended that you will be required to access it through your terminal or command line in the future. I recommend making the project in your Desktop Directory, as it is easily visible and you can access it with a few clicks (our guide will show the commands with the implication that we made a folder named 'projects' on the Desktop).
 
 #### Step 2: Download your Project into the Project Folder
 Follow this [link](https://github.com/MURobotics/TemplateDockerGZ), and you can select the 'code' or 'clone' button on the page, select download zip and install it into your project folder.
@@ -110,10 +129,27 @@ Go to your projects folder and right click the newly install master.zip folder. 
 #### Step 4: Delete your master.zip folder
 Before you do, make sure your project folder has a new folder called 'TemplateDockerGZ'. If so, delete master.zip as we will not need it anymore
 
-### Part 3: Launch the Program
+### Part 3: Launch the Program (Windows)
 
 #### Step 1: Go to the Folder through the Command Line
-We'll want to open up our project within the terminal or command line, this is where Operating Systems will vary the experience.
+We'll want to open up our project within the command line, this is where Operating Systems will vary the experience.
+
+### Part 3: Launch the Program (OSX (Mac), some linux OS')
+
+#### Step 1: Go to the Folder through the Terminal
+We'll want to open up our project within the terminal (you can open your terminal via the search), we will move to our Desktop directory on the terminal by typing `cd ~/Desktop/projects`. If we type `ls` we should be able to see our downloaded folder called 'TemplateDockerGZ'. With this creation, we can run `cd TemplateDockerGZ` to enter the Example project.
+
+#### Step 2: Giving Permission to startup.sh
+For our startup to work, we need to allow it to execute on our computer. To do this, we will run `chmod +x startup.sh`, which would provide the file the permission to execute.
+
+#### Step 3: Launch the Simulation Server
+If we've done everything right to this point, all we will have to do is type `./startup.sh`. This will allow up to build our program, for the initial setup it will take a few minute, but on rebuilds is should only take seconds.
+
+#### Step 4: Launch the Simulation Client
+Once the build has completed, all we have to do is open a web browser (Chrome, Firefox recommended) and type 'localhost:6080'. It should show a webpage with a button saying connect, press it to connect.
+
+#### Step 5: Open the terminal of the Simulation Client
+For our new Web Desktop, we should be able to select the bottom-left icon, and find the terminal option. Open this up and type `gzclient --verbose`. Given enough time, we should be able to see our simulation open.
 
 ## Bonus Method (best performance, but requires native installation of Ubuntu 18.04 or dual boot): Adding Required Packages for native implementations
 
