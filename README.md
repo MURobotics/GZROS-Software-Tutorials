@@ -81,7 +81,39 @@ To see our result, all we have to do is run the client program, which has our gr
 ## Method 3 (free and recommended for non-engineering students, less setup): Using Docker Natively
 Throughout these tutorials we'll be developing and testing using these technologies:
 
-### Part 2:
+### Part 1: Install Prerequisites
+
+#### Step 1: Install Docker
+By following this [link](https://docs.docker.com/get-docker/), you should be albe to go through the process to install docker. You should be able to test if docker is working by running ```docker run hello-world```, this should provide a printout containing:
+
+```
+...
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+...
+```
+
+#### Step 2: Install Docker-Compose
+By following this [link](https://docs.docker.com/compose/install/), you should be able to follow the steps of your Operating System inorder to download Docker-Compose. Once done, you should be able to run ```docker-compose --version``` and receive a version number.
+
+### Part 2: Downloading the Project
+
+#### Step 1: Make a Project Folder
+You'll want to make a folder for your projects to be stored, wherever you want to place this you can, but it's recommended that you will be required to access it through your terminal or command line in the future. I recommend making the project in your Desktop Directory, as it is easily visible and you can access it with a few clicks.
+
+#### Step 2: Download your Project into the Project Folder
+Follow this [link](https://github.com/MURobotics/TemplateDockerGZ), and you can select the 'code' or 'clone' button on the page, select download zip and install it into your project folder.
+
+#### Step 3: Unzip your master.zip folder
+Go to your projects folder and right click the newly install master.zip folder. You should be able to select 'uncompress' or 'extract' to open up the .zip file. 
+
+#### Step 4: Delete your master.zip folder
+Before you do, make sure your project folder has a new folder called 'TemplateDockerGZ'. If so, delete master.zip as we will not need it anymore
+
+### Part 3: Launch the Program
+
+#### Step 1: Go to the Folder through the Command Line
+We'll want to open up our project within the terminal or command line, this is where Operating Systems will vary the experience.
 
 ## Bonus Method (best performance, but requires native installation of Ubuntu 18.04 or dual boot): Adding Required Packages for native implementations
 
