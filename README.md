@@ -17,19 +17,19 @@ Each method has its own pros and cons, and depending on what your priorities are
 
 - [Method 1](https://github.com/MURobotics/GZROS-Software-Tutorials/blob/1-Setting-Up/README.md#method-1-free-for-mu-engineering-students-recommended-for-those-without-ubuntu-os-using-vmware-for-virtual-machine-management) (using VMWare): What makes this method unique is how VMware has excellent support for computer GPUs and it allows for people to run VMs with little performance impacts compared to a native system. The reason why this is the recommended method is that it has a stark advantage on framerates compared to using Method 2 (Virtual Box) and Method 3 (Native Docker) due primarily to the aforementioned reason. The main drawback its software is only free to those who are enrolled within the College of Engineering, while we go through the process of downloading it, this can detract people from its uses.
 
-[video link]()
+[Method 1: video link]()
 
 - [Method 2](https://github.com/MURobotics/GZROS-Software-Tutorials/blob/1-Setting-Up/README.md#method-2-free-for-non-engineering-students-using-virtual-box-software) (using Virtual Box): Admittedly, we're on the fence about the use of this option. With some manual GPU modifications, we're sure it could be more powerful than the native docker option. With that in mind, it appears to have a slower response from a stock configuration that what's desired on OSX (Mac). While this currently has the worst performance, we've included it as an option as other Operating Systems might have better experience using it. Additionally, it's a free VM software that could be viewed as an alternative if Method 3 fell through, or if you have the experience to optimize the graphics.
 
-[video link]()
+[Method 2: video link]()
 
 - [Method 3](https://github.com/MURobotics/GZROS-Software-Tutorials/blob/1-Setting-Up/README.md#method-3-free-and-recommended-for-non-engineering-students-less-setup-using-docker-natively) (Running Docker Natively with no VM): This was the original method for working with the development environment and as such, has its own merits to its creation. This is the simplest to set up (if you can install docker and docker-compose) and should take the least ammount of storage in your PC. While this is the case, the drawback lies within its responsiveness and FPS (this is due to a difference in communication protocols). While it's better than the Virtual Box method, there is a noticable difference in FPS (not awful, but definitely not 60FPS). While it is a noticable difference, it's preferred over Virtual Box, as it's an easier setup, and you can view your simulations within your browser, this is additionally the way how I (the guy writing this) develop out our programs, as it's pretty straight forward and has the best rebuild times, but I would use method 1 if I had to manually edit the simulation worlds for the better performance.
 
-[video link]()
+[Method 3: video link]()
 
 - [Bonus Method](https://github.com/MURobotics/GZROS-Software-Tutorials/blob/1-Setting-Up/README.md#bonus-method-best-performance-but-requires-native-installation-of-ubuntu-1804-or-dual-boot-adding-required-packages-for-native-implementations) (If you have Ubuntu 18.04 already installed on your PC): As long as your PC drivers were set-up properly, this would result in the optimal performance for your development. While this would result in the best performance, we would only encourage you to use this path if you already have sufficient experience with linux or if you know how to setup a dual-boot on your PC. In the steps I will show you what items you'll need to install, and the links to do so, but additionally the tutorial will assume you can understand what the instructions are having you do and you will want to place care into ensuring you follow only the required steps of your system.
 
-[video link]()
+[Method 4: video link]()
 
 ## Method 1 (free for MU Engineering students, recommended for those without Ubuntu OS): Using VMware for virtual machine management
 
