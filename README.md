@@ -10,7 +10,7 @@ In consideration to processor architecture, while x86 is the expected processor 
 
 For minimum system requirements, requirements can vary between methods. It is encouraged that you have 2 cores and 4GB of RAM. It is additionally encouraged that your system has a form of GPU to assist in removing the burden of rendering the simulation (for Methods 1 & Bonus). While there is a chance that these tutorials can work with any system not fulfilling these requirements, we expect the minimum viable performance to be at this level.
 
-If you are using the methods involving virtual machines, you'll want atleast 25GB of free memory (Storage, not RAM) (20GB is the default for the Virtual Machine). If you are planning on running the Development Environment Natively or with Docker, it's reccommended to have approximately 7-10GB of memory available.
+If you are using the methods involving virtual machines, you'll want atleast 30GB of free memory (Storage, not RAM) (25GB is the default for the Virtual Machine). If you are planning on running the Development Environment Natively or with Docker, it's reccommended to have approximately 7-10GB of memory available.
 
 ## **IMPORTANT:** How to choose a method
 Each method has its own pros and cons, and depending on what your priorities are, it can greatly impact your decision. Here is a list of methods that you can choose between and what their benefits and drawbacks are.
@@ -158,6 +158,9 @@ Once the build has completed, all we have to do is open a web browser (Chrome, F
 
 #### Step 5: Open the terminal of the Simulation Client
 For our new Web Desktop, we should be able to select the bottom-left icon, and find the terminal option. Open this up and type `gzclient --verbose`. Given enough time, we should be able to see our simulation open.
+
+### Part 4 (Optional): Install Atom Text Editor
+This [link](https://atom.io/) will bring you to the webside of the free text editor we recommend, any text editor should work, but we recommend one that allows you to see the entire project directory.
 
 ## Bonus Method (best performance, but requires native installation of Ubuntu 18.04 or dual boot): Adding Required Packages for native implementations
 
