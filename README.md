@@ -138,13 +138,15 @@ Before you do, make sure your project folder has a new folder called 'TemplateDo
 #### Step 1: Go to the Folder through the Command Line
 We'll want to open up our project within the command line, this is where Operating Systems will vary the experience.
 
+## TODO, Add windows instructions
+
 ### Part 3: Launch the Program (OSX (Mac), some linux OS')
 
 #### Step 1: Go to the Folder through the Terminal
 We'll want to open up our project within the terminal (you can open your terminal via the search), we will move to our Desktop directory on the terminal by typing `cd ~/Desktop/projects`. If we type `ls` we should be able to see our downloaded folder called 'TemplateDockerGZ'. With this creation, we can run `cd TemplateDockerGZ` to enter the Example project.
 
 #### Step 2: Giving Permission to startup.sh
-For our startup to work, we need to allow it to execute on our computer. To do this, we will run `chmod +x startup.sh`, which would provide the file the permission to execute.
+For our startup to work, we need to allow it to execute on our computer. To do this, we will run `sudo chmod +x startup.sh`, which would provide the file the permission to execute.
 
 #### Step 3: Launch the Simulation Server
 If we've done everything right to this point, all we will have to do is type `./startup.sh`. This will allow up to build our program, for the initial setup it will take a few minute, but on rebuilds is should only take seconds.
